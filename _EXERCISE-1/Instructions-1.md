@@ -19,7 +19,7 @@ Al completar este ejercicio, podrás:
 
 ## 📋 Requerimientos
 
-### Requerimiento 1: Configurar JSON Server
+### Requerimiento 1: Configurar JSON Server.     HECHOOOOOOOOOOOOOO
 
 Necesitas crear un servidor API local usando json-server que servirá los datos de las películas.
 
@@ -37,7 +37,8 @@ Necesitas crear un servidor API local usando json-server que servirá los datos 
 
 ---
 
-### Requerimiento 2: Agregar información a Movie.jsx
+### Requerimiento 2: Agregar información a Movie.jsx.     
+### ----------  HECHO EN utils/formatters.js Function: getRatingStars (habia que hacer la parte 3 de tareas nomas).  y lo agregue en movie.jsx ---------------
 
 Las películas contienen datos numéricos que necesitan ser formateados para una mejor experiencia de usuario.
 
@@ -61,8 +62,12 @@ Cada película tiene una calificación de 0 a 10. Necesitas convertir esto a un 
 
 **Ejemplo:** Una película con calificación 8.2 debería mostrar ⭐⭐⭐⭐⭐
 utils/formatters.js Function: getRatingStars
+### ---------------------------------------------------------------------------------------------
+
 
 #### Parte B: Visualización de Duración
+### ------------------- HECHO EN utils/formatters.js Function: fortmatDuration  y lo agregue en movie.jsx -------------------
+
 
 Las duraciones de las películas están almacenadas en minutos. Necesitas formatearlas como horas y minutos.
 
@@ -85,6 +90,7 @@ Las duraciones de las películas están almacenadas en minutos. Necesitas format
 - 45 minutos → "45min"
 - 120 minutos → "2h 0min"
 
+### ---------------------------------------------------------------------------------------------
 ---
 
 ### Requerimiento 3: Obtener Datos de la API
@@ -93,14 +99,14 @@ Actualmente, la aplicación importa datos directamente del archivo JSON. Necesit
 
 **Tareas:**
 
-- Eliminar cualquier importación local del archivo data.json
-- Crear variables de estado para almacenar películas y categorías
-- Implementar una función async para obtener películas de la API
-- Implementar una función async para obtener categorías de la API
-- Usar useEffect para cargar datos cuando la aplicación inicia
-- Manejar estados de carga (mostrar un mensaje de carga mientras se obtienen los datos)
-- Manejar errores apropiadamente (usar bloques try/catch y registrar errores)
-- Asegurar que la aplicación solo muestre contenido una vez que los datos hayan sido cargados
+- Eliminar cualquier importación local del archivo data.json   L
+- Crear variables de estado para almacenar películas y categorías L (ya estaba en hooks/useFetch.js)
+- Implementar una función async para obtener películas de la API L (ya estaba en hooks/useFetch.js)
+- Implementar una función async para obtener categorías de la API L (ya estaba en hooks/useFetch.js)
+- Usar useEffect para cargar datos cuando la aplicación inicia  L (ya estaba en hooks/useFetch.js)
+- Manejar estados de carga (mostrar un mensaje de carga mientras se obtienen los datos) L (ya estaba en hooks/useFetch.js)
+- Manejar errores apropiadamente (usar bloques try/catch y registrar errores) L (ya estaba en hooks/useFetch.js)
+- Asegurar que la aplicación solo muestre contenido una vez que los datos hayan sido cargados. $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 
 **Importante:** Asegúrate de que tanto películas como categorías sean obtenidas de la API, no de importaciones locales.
 
@@ -108,7 +114,7 @@ Actualmente, la aplicación importa datos directamente del archivo JSON. Necesit
 
 - `http://localhost:3000/movies` - Obtiene todas las películas
 - `http://localhost:3000/categories` - Obtiene todas las categorías
-- `http://localhost:3000/movies?category=Romance` - Obtiene películas filtradas por categoría (ejemplo con Romance)
+- `http://localhost:3000/movies?category=Romance` - Obtiene películas filtradas por categoría (ejemplo con Romance). $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 
 **Nota sobre filtrado:** json-server permite filtrar datos usando parámetros de query. Por ejemplo, si necesitas obtener solo películas de una categoría específica, puedes agregar `?category=NombreCategoria` al endpoint. Esto puede ser útil para optimizar las peticiones en lugar de filtrar en el cliente.
 
@@ -124,11 +130,13 @@ Cuando "All Movies" está seleccionado, mostrar todas las películas en una úni
 
 **Tareas:**
 
-- Detectar cuando el primer segmento (índice 0) está seleccionado
-- Renderizar todas las películas en un FlatList vertical
-- Cada película debe mostrar toda su información (título, póster, descripción, estrellas, duración)
-- La lista debe desplazarse verticalmente para mostrar todas las películas
-- Aplicar espaciado y estilos apropiados
+- Detectar cuando el primer segmento (índice 0) está seleccionado L (en Dashboard,jsx)
+- Renderizar todas las películas en un FlatList vertical. L (en components/AllMovies.jsx)
+- Cada película debe mostrar toda su información (título, póster, descripción, estrellas, duración) L (en components/AllMovies.jsx que llama a Movie.jsx)
+- La lista debe desplazarse verticalmente para mostrar todas las películas.  L (en components/AllMovies.jsx)
+- Aplicar espaciado y estilos apropiados  L (en components/AllMovies.jsx)
+
+ #  DASHBOARD ES EL QUE TIENE TODA LA PAGINA Y MANEJA LA LOGICA, EN INDEX SOLO LLAMO A DASHBOARD.JSX
 
 #### Parte B: Vista de Películas por Categoría
 
@@ -137,20 +145,20 @@ Cuando "Movies By Category" está seleccionado, mostrar películas agrupadas por
 **Requisitos de Diseño:**
 
 - Para cada categoría:
-  - Mostrar el nombre de la categoría como encabezado/título
-  - Mostrar películas de esa categoría en una lista horizontal desplazable
-  - Las películas deben desplazarse horizontalmente dentro de su categoría
-- La vista completa debe desplazarse verticalmente para mostrar todas las categorías
-- Solo mostrar categorías que existan en el array de categorías de la API
+  - Mostrar el nombre de la categoría como encabezado/título  ---- Listo ---- (en componentes/ByCategories.jsx)
+  - Mostrar películas de esa categoría en una lista horizontal desplazable  ---- Listo ---- (en componentes/ByCategories.jsx)
+  - Las películas deben desplazarse horizontalmente dentro de su categoría ---- Listo ---- (en componentes/ByCategories.jsx)
+- La vista completa debe desplazarse verticalmente para mostrar todas las categorías  ---- Listo ---- (en componentes/ByCategories.jsx)
+- Solo mostrar categorías que existan en el array de categorías de la API ---- Listo ---- (en componentes/ByCategories.jsx)
 
 **Tareas:**
 
-- Detectar cuando el segundo segmento (índice 1) está seleccionado
-- Obtener y usar categorías de la API
-- Filtrar películas por categoría para cada sección
-- Implementar un diseño con desplazamiento vertical para categorías y desplazamiento horizontal para películas
-- Estilizar los encabezados de categorías para que sean claramente visibles
-- Asegurar que las listas horizontales muestren múltiples películas una al lado de la otra
+- Detectar cuando el segundo segmento (índice 1) está seleccionado  ---- Listo ---- (en componentes/Dashboard.jsx)
+- Obtener y usar categorías de la API. ---- Listo ---- (en componentes/ByCategories.jsx)
+- Filtrar películas por categoría para cada sección. ---- Listo ---- (en componentes/ByCategories.jsx)
+- Implementar un diseño con desplazamiento vertical para categorías y desplazamiento horizontal para películas  ---- Listo ---- (en componentes/ByCategories.jsx)
+- Estilizar los encabezados de categorías para que sean claramente visibles. ---- Listo ---- (en componentes/ByCategories.jsx)
+- Asegurar que las listas horizontales muestren múltiples películas una al lado de la otra. ---- Listo ---- (en componentes/ByCategories.jsx)
 
 **Nota:** Cada categoría debe aparecer incluso si tiene películas, y las películas solo deben aparecer en su categoría correspondiente.
 

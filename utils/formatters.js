@@ -21,4 +21,14 @@ export const getRatingStars = (rating) => {
   return '⭐'.repeat(stars);
 };
 
-export const formatDuration = (minutes) => {};
+export const formatDuration = (minutes) => {
+  const totalMinutos = Math.floor(minutes);  //math.floor redondea el numero para abajo
+  const horas= Math.floor(totalMinutos/60);
+  const minutos = totalMinutos - (horas * 60);
+
+  if (horas === 0){
+    return (`${minutos}min`);
+  } else {
+    return (`${horas}h ${minutos}min`);
+  }
+};

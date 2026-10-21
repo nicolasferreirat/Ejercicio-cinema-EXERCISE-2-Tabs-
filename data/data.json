@@ -131,7 +131,7 @@
       "description": "Two strangers meet in the city of lights and discover an unexpected connection.",
       "poster": "https://images.unsplash.com/photo-1663868290007-e8df80a5b909?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxyb21hbnRpYyUyMG1vdmllfGVufDF8fHx8MTc2MTcyODE3OHww&ixlib=rb-4.1.0&q=80&w=1080",
       "duration": 112,
-      "rating": 8.0,
+      "rating": 8,
       "reviews": [
         {
           "username": "RomanticSoul",
@@ -173,7 +173,7 @@
       "description": "Explorers venture into uncharted space to establish a new colony.",
       "poster": "https://images.unsplash.com/photo-1470770841072-f978cf4d019e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzcGFjZSUyMGNvbG9ueXxlbnwxfHx8fDE3NjE3NTc5NzlfMA&ixlib=rb-4.1.0&q=80&w=1080",
       "duration": 145,
-      "rating": 9.0,
+      "rating": 9,
       "reviews": []
     },
     {
@@ -346,14 +346,42 @@
       "duration": 118,
       "rating": 8.2,
       "reviews": []
+    },
+    {
+      "title": "toy story nico",
+      "poster": "https://www.dzoom.org.es/wp-content/uploads/2020/02/portada-foto-perfil-redes-sociales-consejos-810x540.jpg",
+      "description": "peli 1",
+      "rating": 0,
+      "duration": 123,
+      "category": "Horror",
+      "id": "pSxXwcUaZWQ"
     }
   ],
   "categories": [
-    { "id": "1", "name": "Action" },
-    { "id": "2", "name": "Sci-Fi" },
-    { "id": "3", "name": "Horror" },
-    { "id": "4", "name": "Comedy" },
-    { "id": "5", "name": "Drama" },
-    { "id": "6", "name": "Romance" }
-  ]
+    {
+      "id": "1",
+      "name": "Action"
+    },
+    {
+      "id": "2",
+      "name": "Sci-Fi"
+    },
+    {
+      "id": "3",
+      "name": "Horror"
+    },
+    {
+      "id": "4",
+      "name": "Comedy"
+    },
+    {
+      "id": "5",
+      "name": "Drama"
+    },
+    {
+      "id": "6",
+      "name": "Romance"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
 }
